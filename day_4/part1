@@ -1,0 +1,19 @@
+import re
+
+text = open("data.txt", "r").readlines()
+
+text = [list(i)[:-1] for i in text]
+
+
+def count_occu(index):
+    
+    for i in range(-3,4):
+        for j in range(-3,4):
+            if (abs(i+j)==1):
+                print(f"i{i} j{j}")
+
+
+
+
+
+
